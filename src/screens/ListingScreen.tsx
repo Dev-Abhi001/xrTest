@@ -81,7 +81,7 @@ const ListingScreen = () => {
             onPress={() => fetchImages()}
             activeOpacity={0.8}
             style={styles.loadButton}>
-            <Text>Click here to load more !!!</Text>
+            <Text style={styles.text}>Click here to load more !!!</Text>
           </TouchableOpacity>
         )}
       </View>
@@ -110,4 +110,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: 'rgba(0, 0, 0, 0.3)',
   },
+  text: {color: '#000', fontSize: 12, fontWeight: 'bold'},
 });
